@@ -11,9 +11,13 @@
 - **Hybrid Attention and Convolutional Induction Network for LiDAR-Camera BEV Fusion in Complex Road Scenes**
 - DOI: https://doi.org/10.1049/itr2.70273
 
+详细实验结果、消融实验和对比实验请参考论文正文；本 README 主要概述方法结构、代码位置和复现命令。
+
 ### 主要创新
 
 本项目的核心改动集中在 BEV 层面的多模态融合，而不是简单拼接 camera BEV 与 LiDAR BEV 特征。主要思想包括：
+
+![HACIFusion-BEV 网络结构图](assets/hacifusion_architecture.png)
 
 1. **LiDAR 位置先验引导的多头交叉注意力**
    - LiDAR BEV 特征具有更准确的几何和空间位置信息。
@@ -178,9 +182,13 @@ The baseline framework is **BEVFusion: A Simple and Robust LiDAR-Camera Fusion F
 - **Hybrid Attention and Convolutional Induction Network for LiDAR-Camera BEV Fusion in Complex Road Scenes**
 - DOI: https://doi.org/10.1049/itr2.70273
 
+Detailed experimental results, ablation studies, and comparison experiments are reported in the paper. This README focuses on the method overview, code structure, and reproduction commands.
+
 ### Main Contributions
 
 The main research change is a BEV-level multimodal fusion module rather than a plain concatenation of camera BEV and LiDAR BEV features.
+
+![HACIFusion-BEV Architecture](assets/hacifusion_architecture.png)
 
 1. **LiDAR-position-guided multi-head cross-attention**
    - LiDAR BEV features provide accurate geometric and spatial priors.
