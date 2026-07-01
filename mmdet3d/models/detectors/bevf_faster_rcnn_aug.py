@@ -197,7 +197,7 @@ class SequentialCrossAttention(nn.Module):
         feature_fuse = self.norm2(feature_fuse)
         feature_fuse = feature_fuse.transpose(1, 2).contiguous().reshape(batch_size, C, h, w)
         weight1 = torch.sigmoid(self.weight1)
-        print("weight1:", weight1)
+        # print("weight1:", weight1)
         feature_fuse = weight1 * feature_fuse + (1 - weight1) * feature_fusion_list[0]
         feature_fuse = self.cc5(feature_fuse)
         feature_fuse = self.norm3(feature_fuse)
