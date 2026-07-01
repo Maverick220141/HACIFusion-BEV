@@ -1,0 +1,28 @@
+HACIFusion-BEV
+
+This repository is a research extension based on BEVFusion:
+"BEVFusion: A Simple and Robust LiDAR-Camera Fusion Framework"
+by Tingting Liang, Hongwei Xie, Kaicheng Yu, Zhongyu Xia,
+Zhiwei Lin, Yongtao Wang, Tao Tang, Bing Wang and Zhi Tang.
+
+The repository preserves the original BEVFusion/OpenMMLab-style
+code structure and license notice, and adds research modifications
+for LiDAR-Camera BEV fusion, especially the hybrid attention and
+convolutional induction fusion module implemented mainly in:
+
+  mmdet3d/models/detectors/bevf_faster_rcnn_aug.py
+
+Additional exploratory research code from the master's project is
+kept separately under:
+
+  research_extras/
+
+The main research contribution corresponds to:
+
+"Hybrid Attention and Convolutional Induction Network for
+LiDAR-Camera BEV Fusion in Complex Road Scenes"
+DOI: https://doi.org/10.1049/itr2.70273
+
+Unless otherwise stated, this project follows the Apache License 2.0
+license file included in this repository. Third-party components keep
+their original copyright and license notices.
